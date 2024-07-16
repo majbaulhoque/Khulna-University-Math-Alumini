@@ -1,0 +1,14 @@
+
+.nav-link, .dropdown-item {
+    color: black !important;     /* Default text color */
+    font-weight: bolder;            /* Semi-bold (600) text */
+    text-decoration: none;       /* No text decoration */
+    transition: all 0.3s ease;   /* Smooth transition for hover effects */
+}
+
+/* Active state */
+.nav-link.active, .dropdown-item.active {
+    color: black !important;       /* Active text color */
+    font-weight: bold;           /* Bold (700) text */
+
+}
