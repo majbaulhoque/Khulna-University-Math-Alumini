@@ -12,3 +12,13 @@
     font-weight: bold;           /* Bold (700) text */
 
 }
+
+@media screen and (min-width: 1200px) {
+    .text-li{
+    margin-left: 20px;
+}
+.li-details{
+    margin-left: 50px;
+}
+}
+
