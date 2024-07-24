@@ -15,7 +15,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <Navbar expand="lg" className="bg-body-tertiary fixed-top">
+            <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="/">
                         <div className='d-flex align-items-center'>
@@ -27,7 +27,10 @@ const NavBar = () => {
                         <Nav className="ms-auto" activeKey={activeKey} onSelect={(selectedKey) => setActiveKey(selectedKey)}>
                             <Nav.Link href="/" className={activeKey === '/' ? 'active' : ''}>Home</Nav.Link>
                             <Nav.Link href="/discipline" className={activeKey === '/discipline' ? 'active' : ''}>Discipline</Nav.Link>
-                            <Nav.Link href="/member" className={activeKey === '/member' ? 'active' : ''}>Member</Nav.Link>
+                            <NavDropdown title="Member" id="about-us-dropdown">
+                                <NavDropdown.Item href="/applyForMembership" className={activeKey === '/applyForMembership' ? 'active' : ''}>Apply for Membership</NavDropdown.Item>
+                                <NavDropdown.Item href="/memberList" className={activeKey === '/memberList' ? 'active' : ''}>Member List</NavDropdown.Item>
+                            </NavDropdown>
                             <Nav.Link href="/publication" className={activeKey === '/publication' ? 'active' : ''}>Publication</Nav.Link>
                             <NavDropdown title="About US" id="about-us-dropdown">
                                 <NavDropdown.Item href="/industrialSite" className={activeKey === '/industrialSite' ? 'active' : ''}>Service one</NavDropdown.Item>
@@ -37,7 +40,6 @@ const NavBar = () => {
                             <Nav.Link href="/profile" className={activeKey === '/profile' ? 'active' : ''}>Profile</Nav.Link>
                             <Nav.Link href="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>
                             <Nav.Link href="/payment" className={activeKey === '/payment' ? 'active' : ''}>Payment</Nav.Link>
-                            <Nav.Link href="/logOut" className={activeKey === '/logOut' ? 'active' : ''}>Log Out</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

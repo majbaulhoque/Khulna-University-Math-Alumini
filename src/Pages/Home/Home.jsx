@@ -1,12 +1,10 @@
+import AboutKhulnaAlumni from "../../Components/About Us/AboutKhulnaAlumni";
 
-import NavBar from "../../Components/NavBar/NavBar";
 
 const Home = () => {
     return (
         <div>
-            <div className="container d-flex ">
-                <NavBar />
-            </div>
+            <AboutKhulnaAlumni />
         </div>
     );
 };

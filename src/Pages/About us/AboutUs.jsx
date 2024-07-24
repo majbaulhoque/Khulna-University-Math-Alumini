@@ -1,8 +1,9 @@
 
+
 const AboutUs = () => {
     return (
-        <div>
-            
+        <div style={{marginTop: "160px"}}>
+
         </div>
     );
 };

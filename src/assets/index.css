@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+}
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0.06rem;
+}
+a{
+    letter-spacing: 0.06rem;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
 
 .nav-link, .dropdown-item {
     color: black !important;     /* Default text color */
@@ -11,6 +41,10 @@
     color: black !important;       /* Active text color */
     font-weight: bold;           /* Bold (700) text */
 
+}
+
+.parent-form{
+    box-shadow: 2px 6px 100px wheat;
 }
 
 @media screen and (min-width: 1200px) {
