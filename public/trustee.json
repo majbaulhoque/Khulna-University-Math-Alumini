@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "CEO"
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "CTO"
+    },
+    {
+        "id": 3,
+        "name": "Charlie Brown",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "CFO"
+    },
+    {
+        "id": 4,
+        "name": "David Wilson",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "COO"
+    },
+    {
+        "id": 5,
+        "name": "Eva Green",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "CMO"
+    },
+    {
+        "id": 6,
+        "name": "Frank Moore",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Lead Developer"
+    },
+    {
+        "id": 7,
+        "name": "Grace Lee",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Senior Designer"
+    },
+    {
+        "id": 8,
+        "name": "Henry Davis",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Project Manager"
+    },
+    {
+        "id": 9,
+        "name": "Isabel Martinez",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "HR Manager"
+    },
+    {
+        "id": 10,
+        "name": "Jack Taylor",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Marketing Specialist"
+    },
+    {
+        "id": 11,
+        "name": "Katherine Anderson",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Sales Director"
+    },
+    {
+        "id": 12,
+        "name": "Liam Thomas",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Customer Support"
+    },
+    {
+        "id": 13,
+        "name": "Mia Robinson",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Business Analyst"
+    },
+    {
+        "id": 14,
+        "name": "Noah Clark",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Data Scientist"
+    },
+    {
+        "id": 15,
+        "name": "Olivia Lewis",
+        "img": "https://i.ibb.co/42v08TP/240-F-244436923-vk-Me10-KKKiw5bjh-Ze-RDT05mox-Wc-Ppdmb.jpg",
+        "designation": "Content Writer"
+    }
+]
