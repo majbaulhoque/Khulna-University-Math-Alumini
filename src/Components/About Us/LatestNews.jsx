@@ -79,6 +79,148 @@ const LatestNews = () => {
                             </div>
                         </div>
                     </div>
+                </Carousel.Item><Carousel.Item>
+                    <div className="container">
+                        <div className="row flex-row flex-nowrap overflow-auto">
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
+                </Carousel.Item><Carousel.Item>
+                    <div className="container">
+                        <div className="row flex-row flex-nowrap overflow-auto">
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-4 mb-4">
+                                <Card className="card p-3" style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={News} />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <p>
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card{`'`}s content.
+                                        </p>
+                                        <hr />
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <div className="d-flex align-items-center">
+                                                <SlCalender style={{ marginRight: '5px' }} />
+                                                <p className="mb-0">25 March 2024</p>
+                                            </div>
+                                            <div>
+                                                <p className="mb-0">Read More</p>
+                                            </div>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
                 </Carousel.Item>
             </Carousel>
         </div>

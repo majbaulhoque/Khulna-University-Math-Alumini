@@ -4,7 +4,7 @@ import Home from "../Pages/Home/Home";
 import Discipline from "../Pages/Discipline/Discipline";
 import Publication from "../Pages/Publication/Publication";
 import AboutUs from "../Pages/About us/AboutUs";
-import SignUp from "../Pages/Sign Up/SignUp";
+import Contact from "../Pages/Contact/Contact";
 import Profile from "../Pages/Profile/Profile";
 import LogIn from "../Pages/Log in/LogIn";
 import Payment from "../Pages/Payment/Payment";
@@ -53,8 +53,8 @@ const route = createBrowserRouter ([
                 element: <BoardOfTrustee />
             }, 
             {
-                path: '/signUp',
-                element: <SignUp />,
+                path: '/contact',
+                element: <Contact />,
             },
             {
                 path: '/profile',

@@ -23,7 +23,7 @@ const BoardOfTrustee = () => {
                     {trustees.length === 0 && <p>No trustees available.</p>}
                     {trustees.map(trustee => (
                         <div key={trustee.id} className="col-12 col-md-6 col-lg-4 mb-4">
-                            <div className="card p-3 bg-dark">
+                            <div className="card p-3 bg-dark" style={{width: "20rem"}}>
                                 <img 
                                     src={trustee.img || "https://via.placeholder.com/150"} 
                                     alt={trustee.name} 

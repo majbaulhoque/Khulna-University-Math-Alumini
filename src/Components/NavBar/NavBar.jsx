@@ -30,13 +30,14 @@ const NavBar = () => {
                             <NavDropdown title="Member" id="about-us-dropdown">
                                 <NavDropdown.Item href="/applyForMembership" className={activeKey === '/applyForMembership' ? 'active' : ''}>Apply for Membership</NavDropdown.Item>
                                 <NavDropdown.Item href="/memberList" className={activeKey === '/memberList' ? 'active' : ''}>Member List</NavDropdown.Item>
+
                             </NavDropdown>
                             <Nav.Link href="/publication" className={activeKey === '/publication' ? 'active' : ''}>Publication</Nav.Link>
                             <NavDropdown title="About US" id="about-us-dropdown">
-                                <NavDropdown.Item href="/industrialSite" className={activeKey === '/industrialSite' ? 'active' : ''}>Service one</NavDropdown.Item>
+                                <NavDropdown.Item href="/trustees" className={activeKey === '/trustees' ? 'active' : ''}>Board of Trustees</NavDropdown.Item>
                                 <NavDropdown.Item href="/newsAndEvent" className={activeKey === '/newsAndEvent' ? 'active' : ''}>Service two</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/signUp" className={activeKey === '/signUp' ? 'active' : ''}>Sign Up</Nav.Link>
+                            <Nav.Link href="/contact" className={activeKey === '/contact' ? 'active' : ''}>Contact</Nav.Link>
                             <Nav.Link href="/profile" className={activeKey === '/profile' ? 'active' : ''}>Profile</Nav.Link>
                             <Nav.Link href="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>
                             <Nav.Link href="/payment" className={activeKey === '/payment' ? 'active' : ''}>Payment</Nav.Link>
