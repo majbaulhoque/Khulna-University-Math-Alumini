@@ -47,6 +47,51 @@ li{
     box-shadow: 2px 6px 100px wheat;
 }
 
+/* committees */
+.committees-board{
+    background-color: brown;
+    height: 350px;
+    border-radius: 40px;
+}
+.committees-ec{
+    background-color: gainsboro;
+    height: 350px;
+}
+
+/* carousel */
+.carousel-parent{
+    background-color: grey;
+}
+
+
+.carousel .card{
+    background-color: #262631;
+    color: white;
+    transition:all 0.3s linear;
+}
+
+.carousel-inner .card p{
+    color: white;
+}
+
+.carousel-inner .card:hover{
+    background-color: black;
+    color: white;
+}
+
+.carousel-inner .card:hover p{
+    columns: black;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: .7rem;
+    height: .7rem;
+    background-color: blue;
+}
+
+
+
+
 @media screen and (min-width: 1200px) {
     .text-li{
     margin-left: 20px;
@@ -54,5 +99,7 @@ li{
 .li-details{
     margin-left: 50px;
 }
+
 }
+
 

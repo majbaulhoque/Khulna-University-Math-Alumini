@@ -12,6 +12,7 @@ import LogOut from "../Pages/Log Out/LogOut";
 import ApplyForMembership from "../Pages/Member/ApplyForMembership";
 import MemberList from "../Pages/Member/MemberList";
 import MembershipGuidelines from "../Components/About Us/MembershipGuidelines";
+import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
 
 
 const route = createBrowserRouter ([
@@ -47,6 +48,10 @@ const route = createBrowserRouter ([
                 path: '/about',
                 element: <AboutUs />,
             },
+            {
+                path: '/trustees',
+                element: <BoardOfTrustee />
+            }, 
             {
                 path: '/signUp',
                 element: <SignUp />,
