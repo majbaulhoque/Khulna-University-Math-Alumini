@@ -1,6 +1,5 @@
 
-
-const Profile = () => {
+const EcCouncil = () => {
     return (
         <div>
             
@@ -8,4 +7,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default EcCouncil;

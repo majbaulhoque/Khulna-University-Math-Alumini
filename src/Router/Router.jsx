@@ -4,7 +4,6 @@ import Home from "../Pages/Home/Home";
 import Discipline from "../Pages/Discipline/Discipline";
 import Publication from "../Pages/Publication/Publication";
 import Contact from "../Pages/Contact/Contact";
-import Profile from "../Pages/Profile/Profile";
 import LogIn from "../Pages/Log in/LogIn";
 import Payment from "../Pages/Payment/Payment";
 import LogOut from "../Pages/Log Out/LogOut";
@@ -12,6 +11,8 @@ import ApplyForMembership from "../Pages/Member/ApplyForMembership";
 import MemberList from "../Pages/Member/MemberList";
 import MembershipGuidelines from "../Pages/Home/MembershipGuidelines";
 import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
+import Gallery from "../Pages/Gallery/Gallery";
+import EcCouncil from "../Components/About Us/EcCouncil";
 
 
 const route = createBrowserRouter ([
@@ -48,12 +49,16 @@ const route = createBrowserRouter ([
                 element: <BoardOfTrustee />
             }, 
             {
+                path: '/ecCouncil',
+                element: <EcCouncil />
+            }, 
+            {
                 path: '/contact',
                 element: <Contact />,
             },
             {
-                path: '/profile',
-                element: <Profile />,
+                path: '/gallery',
+                element: <Gallery />,
             },
             {
                 path: '/logIn',

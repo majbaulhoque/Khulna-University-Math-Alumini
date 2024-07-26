@@ -41,8 +41,9 @@ const Contact = () => {
 
 
             </div>
-            <div className='row my-5 shadow-lg rounded p-3 py-5'>
-                <Form>
+            <div className='row my-5 shadow-lg rounded p-3 py-5 parent-form'>
+                <h3 className='fw-bolder text-center pb-3 '>Contact Us to provide Feedback / Suggestions</h3>
+                <Form className=''>
                     <FloatingLabel
                         controlId="name"
                         label="Name"

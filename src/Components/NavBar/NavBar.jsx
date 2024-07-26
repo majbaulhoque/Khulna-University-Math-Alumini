@@ -35,10 +35,10 @@ const NavBar = () => {
                             <Nav.Link href="/publication" className={activeKey === '/publication' ? 'active' : ''}>Publication</Nav.Link>
                             <NavDropdown title="About US" id="about-us-dropdown">
                                 <NavDropdown.Item href="/trustees" className={activeKey === '/trustees' ? 'active' : ''}>Board of Trustees</NavDropdown.Item>
-                                <NavDropdown.Item href="/newsAndEvent" className={activeKey === '/newsAndEvent' ? 'active' : ''}>Service two</NavDropdown.Item>
+                                <NavDropdown.Item href="/ecCouncil" className={activeKey === '/ecCouncil' ? 'active' : ''}>EC Council</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/contact" className={activeKey === '/contact' ? 'active' : ''}>Contact</Nav.Link>
-                            <Nav.Link href="/profile" className={activeKey === '/profile' ? 'active' : ''}>Profile</Nav.Link>
+                            <Nav.Link href="/gallery" className={activeKey === '/gallery' ? 'active' : ''}>Gallery</Nav.Link>
                             <Nav.Link href="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>
                             <Nav.Link href="/payment" className={activeKey === '/payment' ? 'active' : ''}>Payment</Nav.Link>
                         </Nav>

@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/Z8bKdYw/1.jpg",
+        "name": "Dr. Md. Rafiqul Islam",
+        "title": "Professor",
+        "number": "008801914066279"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/QrDpp3y/2.jpg",
+        "name": "Dr. Md. Mahmud Alam",
+        "title": "Professor",
+        "number": "+880 1912-982811"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/QpzHc77/3.jpg",
+        "name": "Dr. Md. Haider Ali Biswas",
+        "title": "Professor",
+        "number": "+8801711948396"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/hYTX3sk/4.jpg",
+        "name": "Prof. Dr. Sarder Firoz Ahmmed",
+        "title": "Professor",
+        "number": "01712195877"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/VvppBK7/5.jpg",
+        "name": "Prof. Dr. Munnujahan Ara",
+        "title": "Professor",
+        "number": "+8801716341664"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/nBtMdKb/6.jpg",
+        "name": "Md. Azmol Huda, PhD",
+        "title": "Professor",
+        "number": "8801736-658618"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/zV0N8QS/7.jpg",
+        "name": "Dr. Lasker Ershad Ali",
+        "title": "Professor",
+        "number": "+8801712984332"
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/ng3Hj8R/8.jpg",
+        "name": "Dr. Nazmul Islam",
+        "title": "Assistant Professor",
+        "number": "+8801780076427"
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/ng3Hj8R/8.jpg",
+        "name": "Ariful Islam",
+        "title": "Assistant Professor",
+        "number": "01716100051"
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/K6kcL1V/10.jpg",
+        "name": "Mohammad Wahiduzzaman",
+        "title": "Assistant Professor",
+        "number": "+8801913262715"
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co/VY0KBsM/11.jpg",
+        "name": "Md. Mohidul Haque",
+        "title": "Assistant Professor",
+        "number": "+88-01733-474681"
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co/QHpw4zG/12.jpg",
+        "name": "Raju Roy",
+        "title": "Assistant Professor",
+        "number": "+8801717556664"
+    },
+    {
+        "id": 13,
+        "img": "https://i.ibb.co/VMbjwrt/13.jpg",
+        "name": "Dr. Md. Azizur Rahman",
+        "title": "Assistant Professor",
+        "number": "+8801767853101"
+    },
+    {
+        "id": 14,
+        "img": "https://i.ibb.co/dLpqS77/14.jpg",
+        "name": "Uzzwal Kumar Mallick",
+        "title": "Assistant Professor",
+        "number": "+88-01718-833878"
+    },
+    {
+        "id": 15,
+        "img": "https://i.ibb.co/rZgnSkT/15.jpg",
+        "name": "Sk. Abdus Samad",
+        "title": "Assistant Professor",
+        "number": "01950-616321"
+    },
+    {
+        "id": 16,
+        "img": "https://i.ibb.co/VJ8dCSH/16.jpg",
+        "name": "Sk. Reza-E-Rabbi",
+        "title": "Lecturer",
+        "number": "+8801746941913"
+    },
+    {
+        "id": 17,
+        "img": "https://i.ibb.co/F7CQypZ/17.jpg",
+        "name": "Sharmin Sultana Shanta",
+        "title": "Lecturer",
+        "number": "+8801736828446"
+    }
+]
