@@ -1,7 +1,8 @@
-import AboutKhulnaAlumni from "../../Components/About Us/AboutKhulnaAlumni";
-import Committees from "../../Components/About Us/Committees";
-import LatestNews from "../../Components/About Us/LatestNews";
-import UpcomingEvent from "../../Components/About Us/UpcomingEvent";
+import AboutKhulnaAlumni from "./AboutKhulnaAlumni";
+import Committees from "./Committees";
+import LatestNews from "./LatestNews";
+import UpcomingEvent from "./UpcomingEvent";
+
 
 
 const Home = () => {

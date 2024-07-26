@@ -29,11 +29,11 @@ const ApplyForMembership = () => {
                     </Form.Group>
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formFatherName">
-                            <Form.Label>Father's Name</Form.Label>
+                            <Form.Label>Father{`'`}s Name</Form.Label>
                             <Form.Control type="text" placeholder="Name (English)" />
                         </Form.Group>
                         <Form.Group as={Col} controlId="formMotherName">
-                            <Form.Label>Mother's Name</Form.Label>
+                            <Form.Label>Mother{`'`}s Name</Form.Label>
                             <Form.Control type="text" placeholder="Mother Name" />
                         </Form.Group>
                     </Row>

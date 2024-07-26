@@ -3,7 +3,6 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Discipline from "../Pages/Discipline/Discipline";
 import Publication from "../Pages/Publication/Publication";
-import AboutUs from "../Pages/About us/AboutUs";
 import Contact from "../Pages/Contact/Contact";
 import Profile from "../Pages/Profile/Profile";
 import LogIn from "../Pages/Log in/LogIn";
@@ -11,7 +10,7 @@ import Payment from "../Pages/Payment/Payment";
 import LogOut from "../Pages/Log Out/LogOut";
 import ApplyForMembership from "../Pages/Member/ApplyForMembership";
 import MemberList from "../Pages/Member/MemberList";
-import MembershipGuidelines from "../Components/About Us/MembershipGuidelines";
+import MembershipGuidelines from "../Pages/Home/MembershipGuidelines";
 import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
 
 
@@ -43,10 +42,6 @@ const route = createBrowserRouter ([
             {
                 path: '/guidelines',
                 element: <MembershipGuidelines />,
-            },
-            {
-                path: '/about',
-                element: <AboutUs />,
             },
             {
                 path: '/trustees',
