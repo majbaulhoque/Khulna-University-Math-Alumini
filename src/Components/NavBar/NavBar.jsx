@@ -40,7 +40,6 @@ const NavBar = () => {
                             <Nav.Link href="/contact" className={activeKey === '/contact' ? 'active' : ''}>Contact</Nav.Link>
                             <Nav.Link href="/gallery" className={activeKey === '/gallery' ? 'active' : ''}>Gallery</Nav.Link>
                             <Nav.Link href="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>
-                            <Nav.Link href="/payment" className={activeKey === '/payment' ? 'active' : ''}>Payment</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
