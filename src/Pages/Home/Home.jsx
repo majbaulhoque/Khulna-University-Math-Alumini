@@ -1,7 +1,7 @@
-import AboutKhulnaAlumni from "./AboutKhulnaAlumni";
-import Committees from "./Committees";
-import LatestNews from "./LatestNews";
-import UpcomingEvent from "./UpcomingEvent";
+import AboutKhulnaAlumni from "../../Components/Home/AboutKhulnaAlumni";
+import Committees from "../../Components/Home/Committees";
+import LatestNews from "../../Components/Home/LatestNews";
+import UpcomingEvent from "../../Components/Home/UpcomingEvent";
 
 
 

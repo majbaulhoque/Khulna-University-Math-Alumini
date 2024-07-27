@@ -9,7 +9,7 @@ import Payment from "../Pages/Payment/Payment";
 import LogOut from "../Pages/Log Out/LogOut";
 import ApplyForMembership from "../Pages/Member/ApplyForMembership";
 import MemberList from "../Pages/Member/MemberList";
-import MembershipGuidelines from "../Pages/Home/MembershipGuidelines";
+import MembershipGuidelines from "../Components/Home/MembershipGuidelines";
 import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
 import Gallery from "../Pages/Gallery/Gallery";
 import EcCouncil from "../Components/About Us/EcCouncil";
