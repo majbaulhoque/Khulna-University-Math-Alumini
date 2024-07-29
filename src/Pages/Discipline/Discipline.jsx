@@ -1,13 +1,21 @@
 import { useEffect, useState } from "react";
 import Khulna from "../../assets/Images/khulna_university_logo.png";
 
+
 const Discipline = () => {
     const [facultys, setFacultys] = useState([]);
+    const [staffs, setStaffs] = useState([]);
 
     useEffect(() => {
         fetch("faculty.json")
             .then(res => res.json())
             .then(data => setFacultys(data))
+    }, []);
+
+    useEffect(() => {
+        fetch("staff.json")
+            .then(res => res.json())
+            .then(data => setStaffs(data))
     }, []);
 
     return (
@@ -33,6 +41,21 @@ const Discipline = () => {
                                 <h3 className="fw-bolder text-white py-1">{faculty.name}</h3>
                                 <p className="fw-bolder text-white">{faculty.title}</p>
                                 <p className="text-white">{faculty.number}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="my-3">
+                <h2 className="fw-bolder pb-3 mt-5">Officers and Staff</h2>
+                <div className="row">
+                    {staffs?.map(staff => (
+                        <div key={staff.id} className="col-12 col-md-6 col-lg-3 gy-3">
+                            <div className="card p-3 bg-dark h-100">
+                                <img src={staff.img} alt="" className="rounded-top img-fluid" />
+                                <h3 className="fw-bolder text-white py-1">{staff.name}</h3>
+                                <p className="fw-bolder text-white">{staff.title}</p>
+                                <p className="text-white">{staff.number}</p>
                             </div>
                         </div>
                     ))}

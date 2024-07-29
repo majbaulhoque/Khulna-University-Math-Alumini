@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/Z8bKdYw/1.jpg",
+        "name": "H.M. Iqbal Hossein",
+        "title": "Assistant Registrar",
+        "number": "01712773513"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/QrDpp3y/2.jpg",
+        "name": "Md. Shafikul Islam Babu",
+        "title": "Section Officer",
+        "number": "01914066243"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/QpzHc77/3.jpg",
+        "name": "Rokeya Parvin",
+        "title": "Section Officer",
+        "number": "01911836833"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/hYTX3sk/4.jpg",
+        "name": "Josnara",
+        "title": "Section Officer",
+        "number": "01719729164"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/VvppBK7/5.jpg",
+        "name": "Shekh Jakir Hossain",
+        "title": "Office Assistant",
+        "number": "01738493235"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/nBtMdKb/6.jpg",
+        "name": "S.M. Shahinur Islam",
+        "title": "Lab Assistant",
+        "number": "01913148158"
+    }
+]
