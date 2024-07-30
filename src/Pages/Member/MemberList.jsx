@@ -6,12 +6,12 @@ const MemberList = () => {
         <div>
             <div className="container">
                 <div className="row my-3">
-                    <div className="col-5 col-lg-9">
+                    <div className="col-12 col-md-9 col-lg-9">
                         <h2 className="fw-bolder">Member List</h2>
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-md-3 col-lg-3 mt-2 mt-md-0">
                         <Form className="search-form">
-                            <input type="text"  name="searchBox" placeholder="Search..." className="input-box shadow-lg " />
+                            <input type="text" name="searchBox" placeholder="Search..." className="input-box shadow-lg w-100" />
                             <button type="submit" className="search-box"><FaSearch className="m-2 rounded-circle" /></button>
                         </Form>
                     </div>
