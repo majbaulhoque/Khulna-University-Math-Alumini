@@ -79,7 +79,7 @@ const ApplyForMembership = () => {
                     </Row>
 
                     <Form.Group className='mb-3' as={Col} controlId="formGridState">
-                        <Form.Label>ACCADEMIC INFORMATION</Form.Label>
+                        <Form.Label>ACADEMIC INFORMATION</Form.Label>
                         <Form.Select defaultValue="Choose...">
                             <option>Select...</option>
                             <option>SSC</option>
@@ -91,6 +91,52 @@ const ApplyForMembership = () => {
                             <option>MBA/others</option>
                         </Form.Select>
                     </Form.Group>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formInstitute">
+                            <Form.Label>Institute</Form.Label>
+                            <Form.Control type="text" placeholder="Institute Name" />
+                        </Form.Group>
+                    </Row>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formPassingYear">
+                            <Form.Label>Passing Year</Form.Label>
+                            <Form.Control type="number" placeholder="Year" />
+                        </Form.Group>
+                    </Row>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formPersonalData">
+                            <Form.Label>Personal Data Details</Form.Label>
+                            <Form.Control type="text" placeholder="Data" style={{height: '100px'}}/>
+                        </Form.Group>
+                    </Row>
+                    <Row className='mb-3'>
+                        <Form.Group as={Col} controlId="formDistrict">
+                            <Form.Label>Home District</Form.Label>
+                            <Form.Control type="text" placeholder="District" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formReligion">
+                            <Form.Label>Religion</Form.Label>
+                            <Form.Control type="text" placeholder="Religion" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formBlood">
+                            <Form.Label>Blood Group</Form.Label>
+                            <Form.Control type="text" placeholder="Blood Group" />
+                        </Form.Group>
+                    </Row>
+                    <Row className='mb-3'>
+                        <Form.Group as={Col} controlId="formMartial">
+                            <Form.Label>Martial Status</Form.Label>
+                            <Form.Control type="text" placeholder="Martial Status" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formSpouse">
+                            <Form.Label>Spouse Name</Form.Label>
+                            <Form.Control type="text" placeholder="Spouse Name" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formNoOfChild">
+                            <Form.Label>No. Of Child</Form.Label>
+                            <Form.Control type="number" placeholder="No. Of Child" />
+                        </Form.Group>
+                    </Row>
 
                     <Form.Group className="mb-3" id="formGridCheckbox">
                         <Form.Check type="checkbox" label="Check me out" />
