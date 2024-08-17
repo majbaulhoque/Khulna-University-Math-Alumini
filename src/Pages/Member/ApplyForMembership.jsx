@@ -137,11 +137,9 @@ const ApplyForMembership = () => {
                             <Form.Control type="number" placeholder="No. Of Child" />
                         </Form.Group>
                     </Row>
-
                     <Form.Group className="mb-3" id="formGridCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
+                        <Form.Check type="checkbox" label="Check me out" required />
                     </Form.Group>
-
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>

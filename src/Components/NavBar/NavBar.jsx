@@ -7,7 +7,7 @@ import Logo from '../Logo/Logo';
 
 const NavBar = () => {
     const location = useLocation();
-    const [activeKey, setActiveKey] = useState('/'); // Initialize activeKey with '/'
+    const [activeKey, setActiveKey] = useState('/'); 
 
     useEffect(() => {
         setActiveKey(location.pathname);
