@@ -1,7 +1,25 @@
+import axios from "axios";
 import { Form, Table } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
+import { BASE_URl } from "../../config";
+import { useEffect } from "react";
 
 const MemberList = () => {
+
+    const getMemberList = async () =>{
+        let id = 1;
+        try {
+            const res = await axios.get(`${BASE_URl}/api/members/{id}?id=${id}`)
+            console.log(res.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() =>{
+        getMemberList()
+    },[])
+
     return (
         <div>
             <div className="container">
@@ -23,7 +41,7 @@ const MemberList = () => {
                             <th className="fw-bolder p-2 h5 m-lg-2 text-start col-9">Name</th>
                         </tr>
                         <tr className="table-data">
-                            <td className="p-2 ">0001</td>
+                            <td className="p-2 ">1</td>
                             <td className="p-2">Alfreds Futterkiste</td>
                         </tr>
                         <tr className="table-header">

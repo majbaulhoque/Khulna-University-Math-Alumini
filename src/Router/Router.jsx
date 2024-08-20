@@ -13,6 +13,9 @@ import MembershipGuidelines from "../Components/Home/MembershipGuidelines";
 import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
 import Gallery from "../Pages/Gallery/Gallery";
 import EcCouncil from "../Components/About Us/EcCouncil";
+import GalleryDetails from "../Components/Gallery Details/GalleryDetails";
+import SinglePublication from "../Components/Single Publication/SinglePublication";
+
 
 
 const route = createBrowserRouter ([
@@ -41,6 +44,10 @@ const route = createBrowserRouter ([
                 element: <Publication />,
             },
             {
+                path: '/singlePublicationDetails/:id',
+                element: <SinglePublication />
+            },
+            {
                 path: '/guidelines',
                 element: <MembershipGuidelines />,
             },
@@ -59,6 +66,10 @@ const route = createBrowserRouter ([
             {
                 path: '/gallery',
                 element: <Gallery />,
+            },
+            {
+                path: '/galleryDetails',
+                element: <GalleryDetails />, 
             },
             {
                 path: '/logIn',
