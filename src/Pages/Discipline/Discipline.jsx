@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Khulna from "../../assets/Images/khulna_university_logo.png";
 import axios from "axios";
 import { BASE_URl } from "../../config";
-
+import { Card } from "react-bootstrap";
+import PhotosOne from "../../assets/Images/download.jpeg"
 
 const Discipline = () => {
     const [facultiesData, setFacultiesData] = useState([]);
@@ -43,22 +44,33 @@ const Discipline = () => {
                     {
                         facultiesData?.map(faculty => {
                             const { id, nameEn, photo, phone, description, education, email, teacherDesignation } = faculty || {};
-                            return <div key={id} className="col-12 col-md-6 col-lg-3 gy-3">
-                                <div className="card faculty-card p-3" >
-                                    <h4>{nameEn}</h4>
-                                    <p>Phone : {phone}</p>
-                                    <p>Designation : {teacherDesignation}</p>
-                                    <p>{description}</p>
-                                    <p>{education}</p>
-                                    <p>{email}</p>
-                                    
+                            return (
+                                <div key={id} className="col-12 col-md-6 col-lg-3 gy-5">
+                                    <Card className='faculty-card p-3 bg-info' style={{ width: '20rem' }}>
+                                        <div className="profile-card">
+                                            <div className="img">
+                                                <img src={PhotosOne} className="h-100" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="caption">
+                                            <h4 className="fw-bolder mt-5">{nameEn}</h4>
+                                            <p className="py-1">
+                                                <strong>
+                                                    <span className="faculty-description mt-2 d-block">Phone : {phone}</span>
+                                                    <span className="faculty-description mt-2 d-block">{description}</span>
+                                                    <span className="mt-2 d-block">{education}</span>
+                                                    <span className="faculty-description mt-2 d-block">{email}</span>
+                                                </strong>
+                                            </p>
+                                        </div>
+                                    </Card>
                                 </div>
-                            </div>
+                            )
                         })
                     }
                 </div>
             </div>
-            
+
         </div>
     );
 };
