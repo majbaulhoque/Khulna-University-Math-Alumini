@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Cards from "../../assets/Images/card.jpg"
+import { useState } from "react";
 
 
 const Gallery = () => {
-
+    const {id} = useParams();
+    const [galleryData, setGalleryData] = useState([])
     return (
         <div style={{ marginTop: "80px" }}>
             <div className="container">
-            <Link to='/galleryDetails'>
+            <Link to={`/galleryDetails/${id}`} className="fw-bolder text-decoration-none">
                 <div className="row my-5 gy-3 gy-sm-5">
                     {Array(9).fill().map((_, idx) => (
                         
