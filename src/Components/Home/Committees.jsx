@@ -17,10 +17,13 @@ const Committees = () => {
                         </Link>
                     </div>
                     <div className="col-12 col-sm-5 col-md-5 col-lg-5 text-center mx-2">
-                        <div className="committees-ec align-content-center rounded-pill shadow-lg">
-                            <img src={Ec} height={80} alt="committees" />
-                            <h3 className='text-darker fw-bolder'>EC Council</h3>
-                        </div>
+                        <Link to='/ecCouncil' className='text-decoration-none'>
+                            <div className="committees-ec align-content-center rounded-pill shadow-lg">
+                                <img src={Ec} height={80} alt="committees" />
+                                <h3 className='text-darker fw-bolder'>EC Council</h3>
+                            </div>
+                        </Link>
+                        
                     </div>
                 </div>
             </div>

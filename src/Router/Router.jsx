@@ -15,6 +15,8 @@ import Gallery from "../Pages/Gallery/Gallery";
 import EcCouncil from "../Components/About Us/EcCouncil";
 import GalleryDetails from "../Components/Gallery Details/GalleryDetails";
 import SinglePublication from "../Components/Single Publication/SinglePublication";
+import FacultyMember from "../Components/Faculty Member/FacultyMember";
+import CommitteeDetails from "../Components/Ec Council/CommitteeDetails";
 
 
 
@@ -30,6 +32,10 @@ const route = createBrowserRouter ([
             {
                 path: '/discipline',
                 element: <Discipline />,
+            },
+            {
+                path: '/faculty/:id',
+                element: <FacultyMember />,
             },
             {
                 path: '/applyForMembership',
@@ -53,11 +59,15 @@ const route = createBrowserRouter ([
             },
             {
                 path: '/trustees',
-                element: <BoardOfTrustee />
+                element: <BoardOfTrustee />,
             }, 
             {
                 path: '/ecCouncil',
-                element: <EcCouncil />
+                element: <EcCouncil />,
+            },
+            {
+                path: '/ecCouncils/:id',
+                element: <CommitteeDetails />,
             }, 
             {
                 path: '/contact',

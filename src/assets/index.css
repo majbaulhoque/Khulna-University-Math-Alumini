@@ -139,13 +139,17 @@ li{
     position: relative;
     width: 220px;
     height: 220px;
-    background: #fff;
+    background: whitesmoke;
     padding: 30px;
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
     transition: 0.6s;
+    box-shadow: 2px 6px 100px wheat;
 }
 
+.each-faculty{
+    box-shadow: 2px 6px 100px wheat;
+}
 .profile-card .img{
     position: relative;
     width: 100%;

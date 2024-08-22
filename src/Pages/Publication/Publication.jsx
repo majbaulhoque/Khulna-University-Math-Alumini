@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BASE_URl } from "../../config";
 import axios from "axios";
+import { NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 
@@ -27,26 +28,7 @@ const Publication = () => {
     return (
         <div>
             <h3>This is Publication page</h3>
-            {/* <div className="container" >
-                <div className="card p-3">
-                    <h2>{publications['title']}</h2>
-                    <h4>{publications['publicationDate']}</h4>
-                    <p><strong>{publications['publicationType']}</strong></p>
-                    <p><strong>Publication Date:</strong> {publications['publicationDate']}</p>
-                    <p><strong>Volume:</strong> {publications['volumeNumber']}, <strong>Issue:</strong> {publications['issueNumber']}</p>
-                    <p><strong>Pages:</strong> {publications['pageNumbers']}</p>
-                    <p><strong>Description:</strong> {publications['description']}</p>
-                </div>
-            </div> */}
-            {/* <div className="container">
-                <div className="card">
-                    <h3>Card</h3>
-                    <h2>{publications['totalItems']}</h2>
-                    <p><strong>{publications['totalPages']}</strong></p>
-                    <p><strong>{publications['currentPage']}</strong></p>
-                    <p><strong>{publications[0]}</strong></p>
-                </div>
-            </div> */}
+            
             <h1>Total Publicatios : {publications.length}</h1>
             <div>
                 {
