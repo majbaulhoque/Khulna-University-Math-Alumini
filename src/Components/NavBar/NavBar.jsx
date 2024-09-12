@@ -38,7 +38,7 @@ const NavBar = () => {
                             </NavDropdown>
                             <Nav.Link as={NavLink} to="/contact" className={activeKey === '/contact' ? 'active' : ''}>Contact</Nav.Link>
                             <Nav.Link as={NavLink} to="/gallery" className={activeKey === '/gallery' ? 'active' : ''}>Gallery</Nav.Link>
-                            <Nav.Link as={NavLink} to="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>
+                            {/*<Nav.Link as={NavLink} to="/login" className={activeKey === '/login' ? 'active' : ''}>Log In</Nav.Link>*/}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
