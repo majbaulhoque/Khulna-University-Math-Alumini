@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { BASE_URl } from "../../config";
 import axios from "axios";
-import { NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 

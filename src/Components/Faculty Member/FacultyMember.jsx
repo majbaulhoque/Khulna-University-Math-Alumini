@@ -23,7 +23,7 @@ const FacultyMember = () => {
 
     useEffect(() => {
         getFacultyData();
-    }, [id]);
+    }, []);
 
     return (
         <div>
