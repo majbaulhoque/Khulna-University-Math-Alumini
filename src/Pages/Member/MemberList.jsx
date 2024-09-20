@@ -1,81 +1,96 @@
 import axios from "axios";
+import { useState, useEffect } from "react";
 import { Form, Table } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
-import { BASE_URl } from "../../config";
-import { useEffect } from "react";
 
 const MemberList = () => {
+    const [members, setMembers] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [filteredMembers, setFilteredMembers] = useState([]);
 
-    const getMemberList = async () =>{
-        let id = 1;
+    // Fetch member list from API
+    const getMemberList = async () => {
         try {
-            const res = await axios.get(`${BASE_URl}/api/members/{id}?id=${id}`)
-            console.log(res.data)
+            const res = await axios.get('/table.json'); 
+            setMembers(res.data);
+            setFilteredMembers(res.data); 
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
-    }
+    };
 
-    useEffect(() =>{
-        getMemberList()
-    },[])
+    useEffect(() => {
+        getMemberList();
+    }, []);
+
+    // Handle search functionality on button click
+    // const handleSearchClick = () => {
+    //     if (searchTerm === "") {
+    //         setFilteredMembers(members); 
+    //     } else {
+    //         const filtered = members.filter((member) =>
+    //             member.name.toLowerCase().includes(searchTerm.toLowerCase())
+    //         );
+    //         setFilteredMembers(filtered);
+    //     }
+    // };
+
+    const handleSearchClick = () => {
+        const search = searchTerm.toLowerCase().trim();
+        if (search === "") {
+            setFilteredMembers(members);
+        } else {
+            const filtered = members.filter((member) => {
+                const memberName = member.name.toLowerCase();
+                const memberId = member.id.toString();
+                return memberName.includes(search) || memberId.includes(search);
+            });
+            setFilteredMembers(filtered);
+        }
+    };
+    
 
     return (
         <div>
             <div className="container">
-                <div className="row my-3">
-                    <div className="col-12 col-md-9 col-lg-9">
+                <div className="row my-3 justify-content-around align-items-center">
+                    <div className="col-12 col-md-9 col-lg-7">
                         <h2 className="fw-bolder">Member List</h2>
                     </div>
-                    <div className="col-12 col-md-3 col-lg-3 mt-2 mt-md-0">
-                        <Form className="search-form">
-                            <input type="text" name="searchBox" placeholder="Search..." className="input-box shadow-lg w-100" />
-                            <button type="submit" className="search-box"><FaSearch className="m-2 rounded-circle" /></button>
+                    <div className="col-12 col-md-3 col-lg-5 mt-2 mt-md-0">
+                        <Form className="search-form position-relative d-flex align-items-center">
+                            <input
+                                type="text"
+                                name="searchBox"
+                                placeholder="Search..."
+                                className="input-box w-100  p-3"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+                            <button type="button" className="search-box d-flex justify-content-center align-items-center" onClick={handleSearchClick}>
+                                <FaSearch />
+                            </button>
                         </Form>
                     </div>
                 </div>
-                <div>
-                    <Table className="my-3 border">
-                        <tr className="table-header">
-                            <th className="fw-bolder p-2 h5 col-5 col-lg-3 ">Student Id</th>
-                            <th className="fw-bolder p-2 h5 m-lg-2 text-start col-9">Name</th>
-                        </tr>
-                        <tr className="table-data">
-                            <td className="p-2 ">1</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-header">
-                            <td className="p-2">0002</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-data">
-                            <td className="p-2">0003</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-header">
-                            <td className="p-2">0004</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-data">
-                            <td className="p-2">0005</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-header">
-                            <td className="p-2">0006</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-data">
-                            <td className="p-2">0007</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-header">
-                            <td className="p-2">0008</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
-                        <tr className="table-data">
-                            <td className="p-2">0009</td>
-                            <td className="p-2">Alfreds Futterkiste</td>
-                        </tr>
+
+                <div className="table-responsive">
+                    <Table striped bordered hover className="my-3">
+                        <thead>
+                            <tr className="table-header">
+                                <th className="fw-bolder p-2 h5 col-5 col-lg-5 w-auto">Student Id</th>
+                                <th className="fw-bolder p-2 h5 text-start col-9 w-auto">Name</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {filteredMembers.map((member, index) => (
+                                <tr key={index}>
+                                    <td className="p-2 col-2">{member.id}</td>
+                                    <td className="p-2 absorbing-column">{member.name}</td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </Table>
                 </div>
             </div>

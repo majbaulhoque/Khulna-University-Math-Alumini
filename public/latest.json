@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "The Mysterious Forest",
+        "description": "A tale of adventure and discovery in an enchanted forest.",
+        "img": "https://i.ibb.co.com/1z7w0Bm/event.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Space Odyssey",
+        "description": "A thrilling journey through the cosmos exploring distant planets.",
+        "img": "https://i.ibb.co.com/1z7w0Bm/event.jpg"
+    },
+    {
+        "id": 3,
+        "title": "The Lost City",
+        "description": "An archaeological expedition that uncovers the secrets of an ancient civilization.",
+        "img": "https://i.ibb.co.com/1z7w0Bm/event.jpg"
+    },
+    {
+        "id": 4,
+        "title": "The Time Traveler's Diary",
+        "description": "A story of love and time travel, where every moment counts.",
+        "img": "https://i.ibb.co.com/1z7w0Bm/event.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Underwater Wonders",
+        "description": "Exploring the mysteries and beauty of the ocean's depths.",
+        "img": "https://i.ibb.co.com/1z7w0Bm/event.jpg"
+    }
+]

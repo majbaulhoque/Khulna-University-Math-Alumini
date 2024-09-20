@@ -9,7 +9,7 @@ import Payment from "../Pages/Payment/Payment";
 import LogOut from "../Pages/Log Out/LogOut";
 import ApplyForMembership from "../Pages/Member/ApplyForMembership";
 import MemberList from "../Pages/Member/MemberList";
-import MembershipGuidelines from "../Components/Home/MembershipGuidelines";
+// import MembershipGuidelines from "../Components/Home/MembershipGuidelines";
 import BoardOfTrustee from "../Components/About Us/BoardOfTrustee";
 import Gallery from "../Pages/Gallery/Gallery";
 import EcCouncil from "../Components/About Us/EcCouncil";
@@ -53,10 +53,10 @@ const route = createBrowserRouter ([
                 path: '/singlePublicationDetails/:id',
                 element: <SinglePublication />
             },
-            {
-                path: '/guidelines',
-                element: <MembershipGuidelines />,
-            },
+            // {
+            //     path: '/guidelines',
+            //     element: <MembershipGuidelines />,
+            // },
             {
                 path: '/trustees',
                 element: <BoardOfTrustee />,
