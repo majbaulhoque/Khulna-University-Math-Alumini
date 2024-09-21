@@ -30,7 +30,6 @@ const LatestNews = () => {
             <div className="container">
                 <h2 className="fw-bolder text-center mb-5">Latest News</h2>
                 {isError && <h1 className="text-center text-warning">{isError}</h1>}
-
                 <div className="row">
                     {latestDatas?.map(({ id, title, description, img }) => (
                         <div key={id} className="col-12 col-md-6 col-lg-4 mb-4" data-aos="zoom-in" style={{ cursor: "pointer" }}

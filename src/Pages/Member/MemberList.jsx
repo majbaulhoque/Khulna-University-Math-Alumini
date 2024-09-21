@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Form, Table } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
+import { BASE_URl } from "../../config";
 
 const MemberList = () => {
     const [members, setMembers] = useState([]);
@@ -11,9 +12,10 @@ const MemberList = () => {
     // Fetch member list from API
     const getMemberList = async () => {
         try {
-            const res = await axios.get('/table.json'); 
-            setMembers(res.data);
-            setFilteredMembers(res.data); 
+            const res = await axios.get(`${BASE_URl}/api/members`);
+            setMembers(res.data.members);
+            setFilteredMembers(res.data.members); 
+            console.log(res.data.members);
         } catch (error) {
             console.log(error);
         }
@@ -23,32 +25,20 @@ const MemberList = () => {
         getMemberList();
     }, []);
 
-    // Handle search functionality on button click
-    // const handleSearchClick = () => {
-    //     if (searchTerm === "") {
-    //         setFilteredMembers(members); 
-    //     } else {
-    //         const filtered = members.filter((member) =>
-    //             member.name.toLowerCase().includes(searchTerm.toLowerCase())
-    //         );
-    //         setFilteredMembers(filtered);
-    //     }
-    // };
-
+    // Search functionality
     const handleSearchClick = () => {
         const search = searchTerm.toLowerCase().trim();
         if (search === "") {
             setFilteredMembers(members);
         } else {
             const filtered = members.filter((member) => {
-                const memberName = member.name.toLowerCase();
+                const memberName = member.nameEn.toLowerCase(); // Correcting nameEn access
                 const memberId = member.id.toString();
                 return memberName.includes(search) || memberId.includes(search);
             });
             setFilteredMembers(filtered);
         }
     };
-    
 
     return (
         <div>
@@ -78,16 +68,15 @@ const MemberList = () => {
                     <Table striped bordered hover className="my-3">
                         <thead>
                             <tr className="table-header">
-                                <th className="fw-bolder p-2 h5 col-5 col-lg-5 w-auto">Student Id</th>
+                                <th className="fw-bolder p-2 h5 col-5 col-lg-5 w-auto">Member Id</th>
                                 <th className="fw-bolder p-2 h5 text-start col-9 w-auto">Name</th>
-
                             </tr>
                         </thead>
                         <tbody>
-                            {filteredMembers.map((member, index) => (
+                            {filteredMembers?.map((member, index) => (
                                 <tr key={index}>
                                     <td className="p-2 col-2">{member.id}</td>
-                                    <td className="p-2 absorbing-column">{member.name}</td>
+                                    <td className="p-2 absorbing-column">{member.nameEn}</td>
                                 </tr>
                             ))}
                         </tbody>
